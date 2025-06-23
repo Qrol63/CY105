@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Regulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container center">
+        {{ content|safe }}
+
+        <script>
+            const anchor = "{{ anchor }}";
+            if (anchor) {
+                location.href = anchor;
+            }
+        </script>
+        <p><a href="{{ url_for('search', doc=request.args.get('filename') or '') }}">&#8592; Back to search</a></p>
+        <p><a href="{{ url_for('index') }}">&#8592; Back to documents</a></p>
+    </div>
+</body>
+</html>

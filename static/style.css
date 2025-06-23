@@ -1,0 +1,145 @@
+/* Global layout */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #002855;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+/* Paragraphs */
+p {
+    margin: 0.75rem 0;
+    text-align: left;
+}
+
+/* Forms */
+form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #002855;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001f3f;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1rem 2rem;
+    padding-left: 1.5rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.6rem;
+}
+
+dl {
+    margin: 1rem 2rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Snippet highlights */
+mark {
+    background-color: #fffb91;
+    padding: 0 2px;
+}
+
+/* Links */
+a {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Results blocks */
+.result {
+    background: #f8f9fa;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Image presentation (not centered) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #495057;
+}

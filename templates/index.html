@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regs Finder - Select Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container center">
+        <h1>Select Document to Search</h1>
+        <ul>
+            {% for filename, info in documents.items() %}
+            <li>
+                <a href="{{ url_for('search', doc=filename) }}">{{ info.title }}</a> - {{ info.description }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
