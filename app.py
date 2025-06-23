@@ -81,5 +81,9 @@ def view_file(filename):
         content = f.read()
     return render_template('view.html', content=content, anchor=anchor)
 
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # default to 5000 locally
+    app.run(host="0.0.0.0", port=port)
+
